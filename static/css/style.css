@@ -1,0 +1,690 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    /* background: #ebfbfa; */
+    background: white;
+    /* background: #00c4ee; */
+    font-family: 'Inter', 'Times New Roman', Times, serif
+}
+.blue-background {
+    background: linear-gradient(0deg, transparent, #8ed8e9)!important;
+}
+.app {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: transparent;
+    /* border-radius: 0px 0px 50px 50px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    /* box-shadow: 10px 30px 50px rgba(0,0,0,0.15); */
+}
+.view-home {
+    background: transparent;
+}
+.white-logo {
+    filter: invert(1) grayscale(1) brightness(5);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-link {
+    color: #8d8d8d;
+    text-decoration: none;
+    margin-left: 50px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.nav-link:hover {
+    color: #367cff;
+}
+/* Menu Modal */
+.menu-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.menu-modal-container {
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 10px 50px #58585830;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-modal-subtext {
+    max-width: 70%;
+}
+#menu-modal-dissmiss {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#menu-modal-dissmiss:hover {
+    cursor: pointer;
+}
+/* End Menu Modal */
+footer {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #8d8d8d;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#footer-uni {
+    max-width: 220px;
+}
+#footer-fb {
+    max-width: 80px;
+}
+#footer-date {
+    font-size: 0.7em;
+}
+.app .logo {
+    width: 300px;
+}
+.artwork {
+    width: 450px;
+    max-width: 100%;
+}
+.btn {
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
+    font-size: 1.3em;
+    color:white;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    border: 1px solid transparent;
+}
+.btn i {
+    margin-left: 10px;
+}
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 7px 25px #d6d6d6;
+}
+.green {
+    background: linear-gradient(90deg, #38dea2, #06c2db );
+}
+.green:hover {
+    background: white;
+    color: #38dea2;
+    border: 1px solid #38dea2!important;
+}
+.blue {
+    background: linear-gradient(90deg, #0184c0, #00c4ee) ;
+}
+.blue:hover {
+    background: white;
+    color: #00c4ee;
+    border: 1px solid #00c4ee!important;
+}
+/* VIEWS */
+.view {
+    display: flex;
+    flex-direction: column;
+}
+.view .container {
+    display:flex;
+    justify-content: space-around;
+}
+.view .container .artwork-caption {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+.view .container .cta-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-heading {
+    text-align: center;
+}
+.view-id {
+    justify-self: center;
+    align-self: center;
+    opacity: 0.3;
+    color:#8d8d8d;
+    text-align: center;
+}
+/* Calculate Score View */
+.view-calculate .container .artwork {
+    width: 200px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.view-calculate .container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.cta-group-horizontal {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+/* End Calculate Score View */
+/* HOMEPAGE VIEW */
+.hero-home {
+    background: url(https://i.imgur.com/h4Te1tS.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 40px 5px white;
+}
+.hero-home p {
+    text-shadow: 0px 4px 5px #000000;
+    font-weight: 300;
+    background: rgba(0, 0, 0, 0.14);
+    padding: 20px;
+    margin-top: 0;
+}
+.hero-home h2 {
+    text-shadow: 0px 6px 10px #696969;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+.view-home .container .cta-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* END HOMEPAGE VIEW */
+/* Manual Enter View */
+.data-survey {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.cta-group-sub-options .cta-group-horizontal {
+    background: #eef9ff;
+    padding: 10px;
+}
+.cta-group-sub-options .cta-group-label {
+    color: #1c5bfd;
+    padding-left: 20px;
+}
+.view-manual-enter-2 .container .cta-group-col {
+    color: #1a59fd;
+    font-weight: bold;
+}
+.view-manual-enter-2 .container .cta-group-options, .view-manual-enter .container .cta-group-options {
+    color: #1a59fd;
+    font-weight: bold;
+}
+.view-manual-enter-2 .container .cta-group-horizontal {
+    padding-bottom: 35px!important;
+}
+.cta-group-options label:hover, .cta-group-options input:hover {
+    cursor: pointer;
+}
+.view-manual-enter .container .artwork, .view-manual-enter-2 .container .artwork {
+    width: 200px;
+    max-width: 80%;
+    margin: 0 auto;
+    display:block;
+}
+.view-manual-enter .container, .view-manual-enter-2 .container {
+    flex-direction: column;
+}
+.view-manual-enter-2 .cta-manual-2-header {
+    flex-direction: column;
+}
+.view-manual-enter-2 .container .data-survey {
+    text-align: left;
+}
+.view-manual-enter-2 .container .data-survey img {
+    display: block;
+    margin: 0 auto;
+}
+.view-manual-enter-2 .container .cta-group-horizontal {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 2px solid #62cbf233;
+}
+.view-manual-enter-2 .cta-group-agree-options {
+    display:flex;
+    justify-content: space-between;
+}
+.view-manual-enter .container .cta-group-horizontal {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 2px solid #62cbf233;
+}
+.view-manual-enter .container .flash-message {
+    text-align:center;
+    color: rgb(82, 0, 163);
+}
+.cta-group-options {
+    display: flex;
+}
+.calc-score-cta:hover {
+    cursor: pointer;
+    /* background:#2d73b6; */
+    background: white;
+}
+.calc-score-cta {
+    text-decoration: none;
+    text-align:center;
+    /* border-radius: 20px; */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid transparent;
+}
+/* End Manual Enter View */
+/* VIEW Thank you Patient */
+.view-thank-you-patient .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.view-thank-you-patient .container h2 {
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+/* END VIEW Thank you Patient */
+/* VIEW Patient Results High Risk */
+.scorecard-cta-high-risk a.cta-btn.btn {
+    display: inline;
+}
+
+.view-patient-high-risk-steps .container, .view-patient-high-risk-steps-2 .container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.view-patient-high-risk-steps #cta-quit, .view-patient-high-risk-steps-2 #cta-quit,  {
+    align-self: flex-start;
+}
+.placeholder-container {
+    display: flex;
+    align-items: center;
+}
+.placeholder-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height:300px;
+}
+/* view-patient-high-risk-steps-2 */
+/* VIEW Thank You Provider */
+.view-thank-you-provider-high-risk .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* VIEW Importat Data */
+.view-import-bb .container .cta-quit {
+    align-self:flex-start;
+}
+.view-import-bb .container {
+    flex-direction: column;
+    align-items: center;
+}
+.medicare-import-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #62cbf2, #541efd);
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 70%;
+    margin-top:20px;
+}
+.medicare-import-heading {
+color: white;
+}
+.medicare-import-container .modal {
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.modal.modal-disclaimer {
+    margin-bottom: 50px;
+}
+.medicare-import-container .modal p {
+    margin: 2px;
+}
+.medicare-import-container .modal-submit {
+    align-self: flex-end;
+}
+.medicare-import-container .modal-option-group {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-left: 5px;
+    border-left: 5px solid transparent;
+}
+.medicare-import-container .modal-option-group-validate {
+    border-left: 5px solid red;
+}
+.medicare-import-container .modal-option {
+    display: flex;
+    background: #f7f7f7;
+    border: 1px solid #cecece;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.medicare-import-container .modal-option h3 {
+    display: inline;
+    font-weight: 300;
+}
+.medicare-import-container .modal-option p {
+    font-size: 0.8em;
+    color: #a9abb0;
+}
+.medicare-import-container .modal-submit {
+    display: flex;
+    align-self: flex-end;
+}
+.medicare-import-container .modal-submit a {
+    padding: 14px;
+    font-weight: bold;
+    color: #2d73b6;
+    background: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.medicare-import-container a.modal-submit.modal-submit-allow {
+    background: #2d73b6;
+    color: white;
+}
+.medicare-import-container a.modal-submit.modal-submit-deny {
+    text-decoration: underline;
+}
+/* End VIEW Importat Data */
+/* VIEW Loading */
+.view-loading .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.view-loading .container .cta-quit {
+    align-self: flex-start;
+}
+progress#loading-progress-bar {
+    margin-top: 10px;
+    transition: value 1s ease-in-out;
+}
+.view-loading .container .loading-icon {
+    font-size: 3em;
+    color:  #2d73b6;
+}
+/* End VIEW Loading */
+/* View Provider Portal */
+.view-provider-portal .container, .view-provider-scorecard .container {
+    flex-direction: column;
+}
+
+.container .provider-patient-list {
+    width: 90%;
+    margin: 0 auto;
+    background: #f7f7f7;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 20px 50px #f3f3f3;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.container .provider-patient-row  {
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.container h2.provider-patient-name {
+    color: #367cff;
+}
+.container .meta-data-metric {
+    font-weight: bold;
+    color: #367cff;;
+}
+.container .provider-patient-row:hover {
+    background: white;
+    cursor: pointer;
+}
+.container .provider-patient-row {
+    border-top: 0px;
+    transition: all 0.3s ease-in-out;
+}
+.container .provider-patient-identity {
+    display: flex;
+    width: 50%;
+}
+.container .meta-identity-avatar {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+    box-shadow: 0px 10px 10px #d2d2d2;
+    border-radius: 50%;
+}
+.view-provider-portal .high-risk-patient {
+    color: red;
+    font-size: 0.7em;
+}
+/* END Provider Portal */
+/* VIEW Provider Scorecard - Person */
+.view-provider-scorecard .scorecard-data-container {
+    display: flex;
+    justify-content: space-between;
+}
+.view-provider-scorecard  .scorecard-rrs-display {
+    font-size: 1.4em;
+}
+
+.view-provider-scorecard  span#patient-rrs-score {
+    color: #387dff;
+    font-size: 2em;
+}
+.scorecard-cta-high-risk-label {
+    color: red;
+}
+span#provider-patient-data-rrs {
+    color: #387dff;
+    font-size: 2em;
+}
+.scorecard-data-points {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.scorecard-data-points li {
+    padding: 20px;
+    /* margin: 10px;
+    border-radius: 100px; */
+    box-shadow: 1px 2px 15px #ada3a3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+}
+.scorecard-data-points li i {
+    font-size: 2em;
+    padding-right: 10px;
+}
+.data-point-pay {
+    background: #02AAB0;
+    background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0);
+    background: linear-gradient(to right, #00CDAC, #02AAB0);
+    color: white;
+}
+.data-point-bath {
+    background: #cc2b5e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    text-shadow: 1px 1px 5px #848484;
+}
+.data-point-er {
+    background: #314755;
+    background: -webkit-linear-gradient(to right, #26a0da, #314755);
+    background: linear-gradient(to right, #26a0da, #314755);
+    color: white;
+}
+.data-point-cancer {
+    background: #e65c00;
+    background: -webkit-linear-gradient(to right, #F9D423, #e65c00);
+    background: linear-gradient(to right, #F9D423, #e65c00);
+    color: white;
+}
+.data-point-periph {
+    background: #ec008c;
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+    background: linear-gradient(to right, #fc6767, #ec008c);
+    color: white;
+}
+.data-points-disclaimer {
+    max-width: 400px;
+    margin-left: auto;
+}
+.scorecard-end-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* END VIEW Provider Scorecard - Person */
+/* VIEW Patient Provider Survey */
+.placeholder-container .cta-group-horizontal {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #02bcff;
+}
+
+.placeholder-container .cta-group-options {
+    color: #004fff;
+    font-weight: bold;
+}
+.placeholder-container .cta-group-agree-options {
+    width: 400px;
+    color: #004fff;
+    font-weight: bold;
+}
+/* END VIEW Patient Provider Survey */
+/* VIEW Patient High Risk Steps Final */
+.action-item-table {
+    display: flex;
+    background: #e6e6e6;
+    border: 1px solid #d8d8d8;
+}
+.col div {
+    padding: 20px;
+    transition:all 0.5 ease;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #9dc8db;
+}
+.col-header {
+    background: white;
+    font-weight: bold;
+    color: #1396ce;
+}
+.row:hover {
+    background: white;
+}
+/* END Patient High Risk Steps Final */
+/* VIEW Diagnostic Graph */
+.view-patient-matrix .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.diagnostic-graph {
+    max-width: 100%;
+    width: 500px;
+}
+/* END VIEW Diagnostic Graph */
+/* Utilitiy */
+.hide {
+    display: none!important;
+}
+.cta-quit {
+    text-decoration: none;
+    color: #8d8d8d;
+    padding: 8px;
+    align-self: flex-start;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    display:none;
+}
+.cta-quit:hover {
+    color: #0fb5f3;
+    border: 1px solid #0fb5f3;
+}
+.view-id {
+    display: none;
+}

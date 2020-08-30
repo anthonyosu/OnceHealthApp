@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Once Health App</title>
+	<!-- Anthony's includes -->
+	<link rel="shortcut icon" type="image/x-icon" href="https://anthony.media/favicon.ico">
+	<link href="https://anthony.media/assets/global/fonts/SanFrancisco/SanFrancisco.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet">
+	<link href="https://anthony.media/css/global/animate.css" type="text/css" media="all" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<!-- End includes -->
+	<link href="./static/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="./static/css/mobile.css" rel="stylesheet" type="text/css" />
+	<link href="./static/css/animations.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="blue-background">
+	<div class="menu-modal hide">
+		<div class="menu-modal-container">
+			<h2 class="menu-modal-header">Menu modal</h2>
+			<p class="menu-modal-subtext">Hello there. Lorem ipsum dolor sit amet. Agadfgsd fadfl as asdfka sdfa . asdflk as d.sadf
+				asdkf asdf. asdflk asdflasdf asdf.</p><a id="menu-modal-dissmiss" class="cta-btn btn blue">Close</a>
+		</div>
+	</div>
+	<div class="app animate__animated animate__fadeIn animate__delay-1s">
+		<nav>
+			<a href="/"><img src="./static/brand/logo.png" class="logo white-logo" alt="logo"></a>
+            <div class="menu hide">
+                <a id="nav-link-rrs" class="nav-link hide" href="#">Learn about RRS</a>
+                <a id="nav-link-about" class="nav-link" href="#">About</a>
+            </div>
+        </nav>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Home -->
+		<div class="view view-home animate__animated animate__fadeIn animate__delay-1s">
+            <a id="cta-quit" class="cta-quit hide" data-back="view-landing" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+            <div class="container">
+                <div class="hero-home">
+                    <h2>Welcome to Once&#8482</h2>
+                    <p>Our mission is to improve patient outcomes by providing targeted interventions and resources to increase healthy living and reduce time spent in the hospital.</p>
+                    <div class="cta-group">
+                        <!-- <a id="cta-home" class="cta-btn btn blue" href="#">Get Started</a> -->
+                        <a id="cta-patient" class="cta-btn btn green" href="#">Patient Portal <i class="ri-shield-check-line"></i></a>
+                    <a id="cta-doctor" class="cta-btn btn blue" href="#">Provider Portal <i class="ri-hospital-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Landing -->
+		<div class="view view-landing hide animate__animated animate__fadeIn animate__delay-1s">
+            <a id="cta-quit" class="cta-quit hide" data-back="view-home" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+            <div class="container">
+                <div class="artwork-caption">
+                    <img class="artwork" src="./static/img/doctors.svg">
+                    <!-- <h1>Readmission Reduction Program</h1>
+                    <p>Once&trade; assembles data on 21 elements from patients’ electronic health records to determine the risk of readmission and intervention steps.</p> -->
+                </div>
+                <div class="cta-group">
+                    <a id="cta-patient" class="cta-btn btn green" href="#">Patient Portal <i class="ri-shield-check-line"></i></a>
+                    <a id="cta-doctor" class="cta-btn btn blue" href="#">Provider Portal <i class="ri-hospital-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Patient Landing -->
+		<div class="view view-patient-landing hide animate__animated animate__fadeIn animate__delay-1s">
+            <a id="cta-quit" class="cta-quit hide" data-back="view-landing" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+            <div class="container">
+                <div class="artwork-caption">
+                    <img class="artwork" src="./static/img/patients.svg">
+                    <h1>One visit to the hospital is all you need.
+Let’s make that happen.</h1>
+                    <p>With Once&trade;, all your health data is already populated by your health care provider or insurance carrier. We only ask you to complete a few additional questions to help us guide your treatment decisions.</p>
+                </div>
+                <div class="cta-group">
+                    <a id="cta-patient-survey" class="cta-btn btn green" href="#">Lets get started <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW- Calculate Score Call to Action -->
+        <div class="view view-calculate hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit" data-back="view-patient-landing" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <img class="artwork" src="./static/img/data_visual.svg">
+                 <h2 class="view-heading">Choose your data source</h2>
+                 <div class="cta-group-horizontal">
+                    <a id="cta-manual-enter" class="btn calc-score-cta green" href="#">Manually Enter Data</a>
+                    <a id="cta-import-bb" class="calc-score-cta blue" href="#">Connect and import <br>with Medicare Blue Button</a>
+                 </div>
+                 <span class="view-id">View [Calculate]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Manual Data -->
+        <div class="view view-manual-enter hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit" data-back="view-patient-landing" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <div class="data-survey">
+                    <img class="artwork" src="./static/img/preferences.svg">
+                    <h2 class="view-heading">Please answer the questions</h2>
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">1. Do you take prescription medicines? If so, how
+many?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="medication-count-yes" name="medication-count" value="2">
+                            <label for="medication-count-yes">Yes</label>
+                            <input type="radio" id="medication-count-no" name="medication-count" value="0">
+                            <label for="medication-count-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">2. Do you need help bathing, dressing, moving,
+using the restroom, or eating?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="social-support-yes" name="social-support" value="0">
+                            <label for="social-support-yes">Yes</label>
+                            <input type="radio" id="social-support-no" name="social-support" value="1">
+                            <label for="social-support-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">3. Have you ever had to spend a night in the
+hospital? If no, skip to Question 8.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="spend-admission-yes" name="spend-night-admission" value="3">
+                            <label for="spend-night-admission-yes">Yes</label>
+                            <input type="radio" id="spend-admission-no" name="spend-night-admission" value="0">
+                            <label for="spend-night-admission-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">4. When was the last time you were in the hospital?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="last-addmission-g12months" name="last-addmission" value="1">
+                            <label for="last-addmission-g12months">> 12 months</label>
+                            <input type="radio" id="last-addmission-31d-12months" name="last-addmission" value="2">
+                            <label for="last-addmission-31d-12months">31 days - 12 months</label>
+                            <input type="radio" id="last-addmission-30days" name="last-addmission" value="3">
+                            <label for="last-addmission-30days"> < 30 days</label>
+                            
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">5. Did your last hospital stay involve an emergency room visit?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="emergent-admission-yes" name="emergent-admission" value="3">
+                            <label for="emergent-admission-yes">Yes</label>
+                            <input type="radio" id="emergent-admission-no" name="emergent-admission" value="0">
+                            <label for="emergent-admission-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">6. Did your hospital stay require surgery?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="surgery-hospital-admission-yes" name="surgery-hospital-admission" value="3">
+                            <label for="surgery-hospital-admission-yes">Yes</label>
+                            <input type="radio" id="surgery-hospital-admission-no" name="surgery-hospital-admission" value="0">
+                            <label for="surgery-hospital-admission-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">7. Was your hospital stay greater than or equal to five days?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="hospital-days-amount-yes" name="hospital-days-amount" value="3">
+                            <label for="hospital-days-amount-yes">Yes</label>
+                            <input type="radio" id="hospital-days-amount-no" name="hospital-days-amount" value="0">
+                            <label for="hospital-days-amount-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">8. Have you experienced any of the following:</div>
+                    </div>
+                    <div class="cta-group-sub-options">                    
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Cancer?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-cancer-yes" name="history-cancer" value="1">
+                            <label for="history-cancer-yes">Yes</label>
+                            <input type="radio" id="history-cancer-no" name="history-cancer" value="0">
+                            <label for="history-cancer-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Diabetes?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-diabetes-m-yes" name="history-diabetes-m" value="1">
+                            <label for="history-diabetes-m-yes">Yes</label>
+                            <input type="radio" id="history-diabetes-m-no" name="history-diabetes-m" value="0">
+                            <label for="history-diabetes-m-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Heart Attack?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-myocardial-infarction-yes" name="history-myocardial-infarction" value="1">
+                            <label for="history-myocardial-infarction-yes">Yes</label>
+                            <input type="radio" id="history-myocardial-infarction-no" name="history-myocardial-infarction" value="0">
+                            <label for="history-myocardial-infarction-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Stroke?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-cerebrovascular-accident-yes" name="history-cerebrovascular-accident" value="1">
+                            <label for="history-cerebrovascular-accident-yes">Yes</label>
+                            <input type="radio" id="history-cerebrovascular-accident-no" name="history-cerebrovascular-accident" value="0">
+                            <label for="history-cerebrovascular-accident-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Peripheral vascular disease?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-peripheral-vascular-yes" name="history-peripheral-vascular" value="1">
+                            <label for="history-peripheral-vascular-yes">Yes</label>
+                            <input type="radio" id="history-peripheral-vascular-no" name="history-peripheral-vascular" value="0">
+                            <label for="history-peripheral-vascular-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Congestive heart failure?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-congestive-heart-failure-yes" name="history-congestive-heart-failure" value="2">
+                            <label for="history-congestive-heart-failure-yes">Yes</label>
+                            <input type="radio" id="history-congestive-heart-failure-no" name="history-congestive-heart-failure" value="0">
+                            <label for="history-congestive-heart-failure-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Liver or renal disease?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-obstructive-pulmonary-yes" name="history-obstructive-pulmonary" value="2">
+                            <label for="history-obstructive-pulmonary-yes">Yes</label>
+                            <input type="radio" id="history-obstructive-pulmonary-no" name="history-obstructive-pulmonary" value="0">
+                            <label for="history-obstructive-pulmonary-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Alcohol or drug abuse?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-substance-abuse-yes" name="history-substance-abuse" value="2">
+                            <label for="history-substance-abuse-yes">Yes</label>
+                            <input type="radio" id="history-substance-abuse-no" name="history-substance-abuse" value="0">
+                            <label for="history-substance-abuse-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Depression?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-depression-yes" name="history-depression" value="2">
+                            <label for="history-depression-yes">Yes</label>
+                            <input type="radio" id="history-depression-no" name="history-depression" value="0">
+                            <label for="history-depression-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Dementia?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="altered-cognition-yes" name="altered-cognition" value="3">
+                            <label for="altered-cognition-yes">Yes</label>
+                            <input type="radio" id="altered-cognition-no" name="altered-cognition" value="0">
+                            <label for="altered-cognition-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Dialysis?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="dialysis-yes" name="dialysis" value="3">
+                            <label for="dialysis-yes">Yes</label>
+                            <input type="radio" id="dialysis-no" name="dialysis" value="0">
+                            <label for="dialysis-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Do you have a history of End-Stage liver disease?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-liver-disease-yes" name="history-liver-disease" value="4">
+                            <label for="history-liver-disease-yes">Yes</label>
+                            <input type="radio" id="history-liver-disease-no" name="history-liver-disease" value="0">
+                            <label for="history-liver-disease-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">AIDS or HIV?</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="history-hiv-yes" name="history-hiv" value="4">
+                            <label for="history-hiv-yes">Yes</label>
+                            <input type="radio" id="history-hiv-no" name="history-hiv" value="0">
+                            <label for="history-hiv-no">No</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    </div>
+
+                 </div>
+                 <!-- END MANUAL SURVEY -->
+                 <div class="flash-message">
+                     <h2 class="flash-message-text hide">Please answer all questions to continue.</h2>
+                 </div>
+                 <div class="cta-group-horizontal">
+                    <a id="cta-manual-enter-submit" class="calc-score-cta green">Next</a>
+                 </div>
+                 <span class="view-id">View [Manual-Enter]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Manual Data 2 -->
+        <div class="view view-manual-enter-2 hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit" data-back="view-patient-landing" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <div class="data-survey">
+                    <img class="artwork" src="./static/img/preferences.svg">
+                    <h2 class="view-heading">Tell us how you feel about your health in general…</h2>
+                    <div class="cta-group-horizontal cta-manual-2-header">
+                        <p>For each item, please select the value that represents the extent to which you agree or disagree with that statement. Please answer every item.</p>
+                        <div class="cta-group-agree-options">
+                            <div class="cta-group-col">SD=STRONGLY DISAGREE<br>MD=MODERATELY DISAGREE<br> 
+                            D=SLIGHTLY DISAGREE</div>
+                            <div class="cta-group-col">
+                            A=SLIGHTLY AGREE<br>MA=MODERATELY AGREE<br>SA=STRONGLY AGREE</div>
+                        </div>
+                    </div>
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">If my condition worsens, it is my own behavior which determines how soon I will feel better again.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="behavior-feel-better-sd" name="behavior-feel-better" value="2">
+                            <label for="behavior-feel-better-sd">SD</label>
+                            <input type="radio" id="behavior-feel-better-MD" name="behavior-feel-better" value="2">
+                            <label for="behavior-feel-better-MD">MD</label>
+                            <input type="radio" id="behavior-feel-better-D" name="behavior-feel-better" value="2">
+                            <label for="behavior-feel-better-D">D</label>
+                            <input type="radio" id="behavior-feel-better-A" name="behavior-feel-better" value="2">
+                            <label for="behavior-feel-better-A">A</label>
+                            <input type="radio" id="behavior-feel-better-MA" name="behavior-feel-better" value="2">
+                            <label for="behavior-feel-better-MA">MA</label>
+                            <input type="radio" id="behavior-feel-better-SA" name="behavior-feel-better" value="2">
+                            <label for="behavior-feel-better-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">As to my condition, what will be will be.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="what-will-be-will-be-sd" name="what-will-be-will-be-sd" value="2">
+                            <label for="what-will-be-will-be-sd">SD</label>
+                            <input type="radio" id="what-will-be-will-be-MD" name="what-will-be-will-be-MD" value="2">
+                            <label for="what-will-be-will-be-MD">MD</label>
+                            <input type="radio" id="what-will-be-will-be-D" name="what-will-be-will-be-D" value="2">
+                            <label for="what-will-be-will-be-D">D</label>
+                            <input type="radio" id="what-will-be-will-be-A" name="what-will-be-will-be-A" value="2">
+                            <label for="what-will-be-will-be-A">A</label>
+                            <input type="radio" id="what-will-be-will-be-MA" name="what-will-be-will-be-MA" value="2">
+                            <label for="what-will-be-will-be-MA">MA</label>
+                            <input type="radio" id="what-will-be-will-be-SA" name="what-will-be-will-be-SA" value="2">
+                            <label for="what-will-be-will-be-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">If I see my doctor regularly, I am less likely to have problems with my condition.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="see-doctor-regularly-sd" name="see-doctor-regularly" value="2">
+                            <label for="see-doctor-regularly-sd">SD</label>
+                            <input type="radio" id="see-doctor-regularly-MD" name="see-doctor-regularly" value="2">
+                            <label for="see-doctor-regularly-MD">MD</label>
+                            <input type="radio" id="see-doctor-regularly-D" name="see-doctor-regularly" value="2">
+                            <label for="see-doctor-regularly-D">D</label>
+                            <input type="radio" id="see-doctor-regularly-A" name="see-doctor-regularly" value="2">
+                            <label for="see-doctor-regularly-A">A</label>
+                            <input type="radio" id="see-doctor-regularly-MA" name="see-doctor-regularly" value="2">
+                            <label for="see-doctor-regularly-MA">MA</label>
+                            <input type="radio" id="see-doctor-regularly-SA" name="see-doctor-regularly" value="2">
+                            <label for="see-doctor-regularly-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Most things that affect my condition happen to me by chance.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="things-chance-sd" name="things-chance" value="2">
+                            <label for="things-chance-sd">SD</label>
+                            <input type="radio" id="things-chance-MD" name="things-chance" value="2">
+                            <label for="things-chance-MD">MD</label>
+                            <input type="radio" id="things-chance-D" name="things-chance" value="2">
+                            <label for="things-chance-D">D</label>
+                            <input type="radio" id="things-chance-A" name="things-chance" value="2">
+                            <label for="things-chance-A">A</label>
+                            <input type="radio" id="things-chance-MA" name="things-chance" value="2">
+                            <label for="things-chance-MA">MA</label>
+                            <input type="radio" id="things-chance-SA" name="things-chance" value="2">
+                            <label for="things-chance-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Whenever my condition worsens, I should consult a medically trained professional.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="condition-worsen-sd" name="condition-worsen" value="2">
+                            <label for="condition-worsen-sd">SD</label>
+                            <input type="radio" id="condition-worsen-MD" name="condition-worsen" value="2">
+                            <label for="condition-worsen-MD">MD</label>
+                            <input type="radio" id="condition-worsen-D" name="condition-worsen" value="2">
+                            <label for="condition-worsen-D">D</label>
+                            <input type="radio" id="condition-worsen-A" name="condition-worsen" value="2">
+                            <label for="condition-worsen-A">A</label>
+                            <input type="radio" id="condition-worsen-MA" name="condition-worsen" value="2">
+                            <label for="condition-worsen-MA">MA</label>
+                            <input type="radio" id="condition-worsen-SA" name="condition-worsen" value="2">
+                            <label for="condition-worsen-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">I am directly responsible for my condition getting better or worse.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="responsible-sd" name="responsible" value="2">
+                            <label for="responsible-sd">SD</label>
+                            <input type="radio" id="responsible-MD" name="responsible" value="2">
+                            <label for="responsible-MD">MD</label>
+                            <input type="radio" id="responsible-D" name="responsible" value="2">
+                            <label for="responsible-D">D</label>
+                            <input type="radio" id="responsible-A" name="responsible" value="2">
+                            <label for="responsible-A">A</label>
+                            <input type="radio" id="responsible-MA" name="responsible" value="2">
+                            <label for="responsible-MA">MA</label>
+                            <input type="radio" id="responsible-SA" name="responsible" value="2">
+                            <label for="responsible-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Other people play a big role in whether my condition improves, stays the same, or gets worse.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="others-role-sd" name="others-role" value="2">
+                            <label for="others-role-sd">SD</label>
+                            <input type="radio" id="others-role-MD" name="others-role" value="2">
+                            <label for="others-role-MD">MD</label>
+                            <input type="radio" id="others-role-D" name="others-role" value="2">
+                            <label for="others-role-D">D</label>
+                            <input type="radio" id="others-role-A" name="others-role" value="2">
+                            <label for="others-role-A">A</label>
+                            <input type="radio" id="others-role-MA" name="others-role" value="2">
+                            <label for="others-role-MA">MA</label>
+                            <input type="radio" id="others-role-SA" name="others-role" value="2">
+                            <label for="others-role-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Whatever goes wrong with my condition is my own fault.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="goes-wrong-sd" name="goes-wrong" value="2">
+                            <label for="goes-wrong-sd">SD</label>
+                            <input type="radio" id="goes-wrong-MD" name="goes-wrong" value="2">
+                            <label for="goes-wrong-MD">MD</label>
+                            <input type="radio" id="goes-wrong-D" name="goes-wrong" value="2">
+                            <label for="goes-wrong-D">D</label>
+                            <input type="radio" id="goes-wrong-A" name="goes-wrong" value="2">
+                            <label for="goes-wrong-A">A</label>
+                            <input type="radio" id="goes-wrong-MA" name="goes-wrong" value="2">
+                            <label for="goes-wrong-MA">MA</label>
+                            <input type="radio" id="goes-wrong-SA" name="goes-wrong" value="2">
+                            <label for="goes-wrong-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Luck plays a big part in determining how my condition improves.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="luck-sd" name="luck" value="2">
+                            <label for="luck-sd">SD</label>
+                            <input type="radio" id="luck-MD" name="luck" value="2">
+                            <label for="luck-MD">MD</label>
+                            <input type="radio" id="luck-D" name="luck" value="2">
+                            <label for="luck-D">D</label>
+                            <input type="radio" id="luck-A" name="luck" value="2">
+                            <label for="luck-A">A</label>
+                            <input type="radio" id="luck-MA" name="luck" value="2">
+                            <label for="luck-MA">MA</label>
+                            <input type="radio" id="luck-SA" name="luck" value="2">
+                            <label for="luck-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">In order for my condition to improve, it is up to other people to see that the right things happen.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="others-see-right-sd" name="others-see-right" value="2">
+                            <label for="others-see-right-sd">SD</label>
+                            <input type="radio" id="others-see-right-MD" name="others-see-right" value="2">
+                            <label for="others-see-right-MD">MD</label>
+                            <input type="radio" id="others-see-right-D" name="others-see-right" value="2">
+                            <label for="others-see-right-D">D</label>
+                            <input type="radio" id="others-see-right-A" name="others-see-right" value="2">
+                            <label for="others-see-right-A">A</label>
+                            <input type="radio" id="others-see-right-MA" name="others-see-right" value="2">
+                            <label for="others-see-right-MA">MA</label>
+                            <input type="radio" id="others-see-right-SA" name="others-see-right" value="2">
+                            <label for="others-see-right-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Whatever improvement occurs with my condition is largely a matter of good fortune.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="good-fortunes-sd" name="good-fortunes" value="2">
+                            <label for="good-fortunes-sd">SD</label>
+                            <input type="radio" id="good-fortunes-MD" name="good-fortunes" value="2">
+                            <label for="good-fortunes-MD">MD</label>
+                            <input type="radio" id="good-fortunes-D" name="good-fortunes" value="2">
+                            <label for="good-fortunes-D">D</label>
+                            <input type="radio" id="good-fortunes-A" name="good-fortunes" value="2">
+                            <label for="good-fortunes-A">A</label>
+                            <input type="radio" id="good-fortunes-MA" name="good-fortunes" value="2">
+                            <label for="good-fortunes-MA">MA</label>
+                            <input type="radio" id="good-fortunes-SA" name="good-fortunes" value="2">
+                            <label for="good-fortunes-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">The main thing which affects my condition is what I myself do.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="myself-do-sd" name="myself-do" value="2">
+                            <label for="myself-do-sd">SD</label>
+                            <input type="radio" id="myself-do-MD" name="myself-do" value="2">
+                            <label for="myself-do-MD">MD</label>
+                            <input type="radio" id="myself-do-D" name="myself-do" value="2">
+                            <label for="myself-do-D">D</label>
+                            <input type="radio" id="myself-do-A" name="myself-do" value="2">
+                            <label for="myself-do-A">A</label>
+                            <input type="radio" id="myself-do-MA" name="myself-do" value="2">
+                            <label for="myself-do-MA">MA</label>
+                            <input type="radio" id="myself-do-SA" name="myself-do" value="2">
+                            <label for="myself-do-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">I deserve the credit when my condition improves and the blame when it gets worse.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="deserve-credit-sd" name="deserve-credit" value="2">
+                            <label for="deserve-credit-sd">SD</label>
+                            <input type="radio" id="deserve-credit-MD" name="deserve-credit" value="2">
+                            <label for="deserve-credit-MD">MD</label>
+                            <input type="radio" id="deserve-credit-D" name="deserve-credit" value="2">
+                            <label for="deserve-credit-D">D</label>
+                            <input type="radio" id="deserve-credit-A" name="deserve-credit" value="2">
+                            <label for="deserve-credit-A">A</label>
+                            <input type="radio" id="deserve-credit-MA" name="deserve-credit" value="2">
+                            <label for="deserve-credit-MA">MA</label>
+                            <input type="radio" id="deserve-credit-SA" name="deserve-credit" value="2">
+                            <label for="deserve-credit-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">Following doctor's orders to the letter is the best way to keep my condition from getting any worse.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="doc-order-sd" name="doc-order" value="2">
+                            <label for="doc-order-sd">SD</label>
+                            <input type="radio" id="doc-order-MD" name="doc-order" value="2">
+                            <label for="doc-order-MD">MD</label>
+                            <input type="radio" id="doc-order-D" name="doc-order" value="2">
+                            <label for="doc-order-D">D</label>
+                            <input type="radio" id="doc-order-A" name="doc-order" value="2">
+                            <label for="doc-order-A">A</label>
+                            <input type="radio" id="doc-order-MA" name="doc-order" value="2">
+                            <label for="doc-order-MA">MA</label>
+                            <input type="radio" id="doc-order-SA" name="doc-order" value="2">
+                            <label for="doc-order-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">If my condition worsens, it's a matter of fate.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="fate-sd" name="fate" value="2">
+                            <label for="fate-sd">SD</label>
+                            <input type="radio" id="fate-MD" name="fate" value="2">
+                            <label for="fate-MD">MD</label>
+                            <input type="radio" id="fate-D" name="fate" value="2">
+                            <label for="fate-D">D</label>
+                            <input type="radio" id="fate-A" name="fate" value="2">
+                            <label for="fate-A">A</label>
+                            <input type="radio" id="fate-MA" name="fate" value="2">
+                            <label for="fate-MA">MA</label>
+                            <input type="radio" id="fate-SA" name="fate" value="2">
+                            <label for="fate-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">If I am lucky, my condition will get better.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="am-lucky-sd" name="am-lucky" value="2">
+                            <label for="am-lucky-sd">SD</label>
+                            <input type="radio" id="am-lucky-MD" name="am-lucky" value="2">
+                            <label for="am-lucky-MD">MD</label>
+                            <input type="radio" id="am-lucky-D" name="am-lucky" value="2">
+                            <label for="am-lucky-D">D</label>
+                            <input type="radio" id="am-lucky-A" name="am-lucky" value="2">
+                            <label for="am-lucky-A">A</label>
+                            <input type="radio" id="am-lucky-MA" name="am-lucky" value="2">
+                            <label for="am-lucky-MA">MA</label>
+                            <input type="radio" id="am-lucky-SA" name="am-lucky" value="2">
+                            <label for="am-lucky-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">If my condition takes a turn for the worse, it is because I have not been taking proper care of myself.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="turn-for-worse-sd" name="turn-for-worse" value="2">
+                            <label for="turn-for-worse-sd">SD</label>
+                            <input type="radio" id="turn-for-worse-MD" name="turn-for-worse" value="2">
+                            <label for="turn-for-worse-MD">MD</label>
+                            <input type="radio" id="turn-for-worse-D" name="turn-for-worse" value="2">
+                            <label for="turn-for-worse-D">D</label>
+                            <input type="radio" id="turn-for-worse-A" name="turn-for-worse" value="2">
+                            <label for="turn-for-worse-A">A</label>
+                            <input type="radio" id="turn-for-worse-MA" name="turn-for-worse" value="2">
+                            <label for="turn-for-worse-MA">MA</label>
+                            <input type="radio" id="turn-for-worse-SA" name="turn-for-worse" value="2">
+                            <label for="turn-for-worse-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                    <!-- SURVEY OPTION -->
+                    <div class="cta-group-horizontal">
+                        <div class="cta-group-label">The type of help I receive from other people determines how soon my condition improves.</div>
+                        <div class="cta-group-options">
+                            <input type="radio" id="type-of-help-from-others-sd" name="type-of-help-from-others" value="2">
+                            <label for="type-of-help-from-others-sd">SD</label>
+                            <input type="radio" id="type-of-help-from-others-MD" name="type-of-help-from-others" value="2">
+                            <label for="type-of-help-from-others-MD">MD</label>
+                            <input type="radio" id="type-of-help-from-others-D" name="type-of-help-from-others" value="2">
+                            <label for="turn-for-worse-D">D</label>
+                            <input type="radio" id="type-of-help-from-others-A" name="type-of-help-from-others" value="2">
+                            <label for="type-of-help-from-others-A">A</label>
+                            <input type="radio" id="type-of-help-from-others-MA" name="type-of-help-from-others" value="2">
+                            <label for="type-of-help-from-others-MA">MA</label>
+                            <input type="radio" id="type-of-help-from-others-SA" name="type-of-help-from-others" value="2">
+                            <label for="type-of-help-from-others-SA">SA</label>
+                        </div>
+                    </div>
+                    <!-- END SURVEY OPTION -->
+                 </div>
+                 <!-- END MANUAL SURVEY -->
+                 <div class="flash-message">
+                     <h2 class="flash-message-text hide">Please answer all questions to continue.</h2>
+                 </div>
+                 <div class="cta-group-horizontal">
+                    <a id="cta-manual-enter-2-submit" class="btn calc-score-cta green">Next</a>
+                 </div>
+                 <span class="view-id">View [Manual-Enter-2]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Import Data Medicare -->
+        <div class="view view-import-bb hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit" data-back="view-calculate" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <div class="medicare-import-container">
+                     <h2 class="medicare-import-heading">Medicare.gov</h2>
+                     <div class="modal">
+                         <h2>Once Health App has asked for some of your data.</h2>
+                         <p>Information about your doctor/hospital visits</p>
+                         <p>Information about the prescription medications you take</p>
+                         <p>Personal Information like your name, address, date of birth, race, and gender</p>
+                         <h2>Privacy Options</h2>
+                         <div class="modal-option-group">
+                            <div class="modal-option">
+                                <input type="radio" id="share-data-medicare-yes" name="share-data-medicare" value="yes">
+                                <label for="share-data-medicare-yes">
+                                    <h3>Share all of your data</h3>
+                                    <p>This app will have access to both your healthcare data and some personal information</p>
+                                    </label>
+                            </div>
+                            <div class="modal-option">
+                                <input type="radio" id="share-data-medicare-no" name="share-data-medicare" value="no">
+                                <label for="share-data-medicare-no">
+                                    <h3>Share healthcare data, but not your personal info</h3>
+                                    <p>Block some of your personal data like name, address, date of birth, race, and gender.</p>
+                                </label>
+                            </div> 
+                         </div>
+                         <h2>Privacy Options</h2>
+                         <p>To understand fully how your data is being used, please read the app's Privacy Policy and Terms and Conditions.</p>
+                         <div class="modal-submit">
+                             <a class="modal-submit modal-submit-allow" href="#" data-target="view-loading">Allow</a>
+                             <a class="modal-submit modal-submit-deny" href="#" data-back="view-calculate">Deny</a>
+                         </div>
+                     </div>
+                    <div class="modal modal-disclaimer">
+                        <p>You can revoke this app's access to your data at any time by logging into your MyMedicare.gov account or calling us at 1-800-633-427</p>
+                    </div>
+                 </div>
+                 <span class="view-id">View [Import Data]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Loading -->
+        <div class="view view-loading hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit hide" data-back="view-manual-enter" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <img class="artwork" src="./static/img/data_visual.svg">
+                 <h2 class="view-heading">Calculating your score</h2>
+                 <i class="ri-settings-3-line rotating loading-icon"></i>
+                 <progress id="loading-progress-bar" value="0" max="100"></progress>
+                 <h5 id="loading-flashing-text">One moment please</h5>
+                 <div class="cta-group-horizontal">
+                    <a id="cta-loading-get-score" class="calc-score-cta green hide" href="#">View Score</a>
+                 </div>
+                 <span class="view-id">View [Loading]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Thank You Patient -->
+        <div class="view view-thank-you-patient hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit" data-back="view-landing" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <div class="artwork-container">
+                     <img class="artwork" src="./static/img/process.svg">
+                 </div>
+                 <h2>Thank you for sharing your information and thoughts about your health situation.  You're one step closer to your best health!</h2>
+                 <span class="view-id">View [Thank You Patient]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Patient High Risk Steps -->
+        <div class="view view-patient-high-risk-steps hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit" data-back="view-provider-scorecard" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <h3>ADDITIONAL STEPS RECOMMENDED</h3>
+                 <p>There are a number of things the patient can do to improve their course of care.  To identify these items, please complete the following with the patient</p>
+                 <div class="placeholder-container">
+                    <div class="data-survey">
+                        <!-- <img class="artwork" src="./static/img/preferences.svg"> -->
+                        <!-- <h2 class="view-heading">Please answer the questions</h2> -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">What race is the patient?</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="race-black" name="race" value="2">
+                                <label for="race-black">Black</label>
+                                <input type="radio" id="race-white" name="race" value="0">
+                                <label for="race-white">White</label>
+                                <input type="radio" id="race-asian" name="race" value="0">
+                                <label for="race-asian">Asian</label>
+                                <input type="radio" id="race-hispanic" name="race" value="0">
+                                <label for="race-hispanic">Hispanic</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">What gender is the patient?</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="gender-Female" name="gender" value="2">
+                                <label for="gender-Female">Female</label>
+                                <input type="radio" id="gender-Male" name="gender" value="0">
+                                <label for="gender-Male">Male</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">Highest education level?</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="edu-el" name="edu" value="2">
+                                <label for="edu-el">Elementary School</label>
+                                <input type="radio" id="edu-hs" name="edu" value="2">
+                                <label for="edu-hs">High School</label>
+                                <input type="radio" id="edu-college" name="edu" value="2">
+                                <label for="edu-college">College</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">Income level?</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="inc-el" name="inc" value="2">
+                                <label for="inc-el">Lower</label>
+                                <input type="radio" id="inc-hs" name="inc" value="2">
+                                <label for="inc-hs">Middle</label>
+                                <input type="radio" id="inc-college" name="inc" value="2">
+                                <label for="inc-college">Higher</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">Complexity of procedure?</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="complex-a" name="complex" value="2">
+                                <label for="complex-a">Inpatient</label>
+                                <input type="radio" id="complex-b" name="complex" value="2">
+                                <label for="complex-b">Other</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">Condition severity/progression?</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="serious-a" name="serious" value="2">
+                                <label for="serious-a">Serious</label>
+                                <input type="radio" id="serious-b" name="serious" value="2">
+                                <label for="serious-b">Not Serious</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <div class="cta-group-horizontal cta-manual-2-header">
+                        <p>For each item, please select the value that represents the extent to which you agree or disagree with that statement. Please answer every item.</p>
+                        <div class="cta-group-agree-options">
+                            <div class="cta-group-col">SD=STRONGLY DISAGREE<br>MD=MODERATELY DISAGREE<br> 
+                            D=SLIGHTLY DISAGREE</div>
+                            <div class="cta-group-col">
+                            A=SLIGHTLY AGREE<br>MA=MODERATELY AGREE<br>SA=STRONGLY AGREE</div>
+                        </div>
+                        </div>
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">I am hopeful that good things will happen to me.</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="behavior-feel-better-sd" name="behavior-feel-better" value="2">
+                                <label for="behavior-feel-better-sd">SD</label>
+                                <input type="radio" id="behavior-feel-better-MD" name="behavior-feel-better" value="2">
+                                <label for="behavior-feel-better-MD">MD</label>
+                                <input type="radio" id="behavior-feel-better-D" name="behavior-feel-better" value="2">
+                                <label for="behavior-feel-better-D">D</label>
+                                <input type="radio" id="behavior-feel-better-A" name="behavior-feel-better" value="2">
+                                <label for="behavior-feel-better-A">A</label>
+                                <input type="radio" id="behavior-feel-better-MA" name="behavior-feel-better" value="2">
+                                <label for="behavior-feel-better-MA">MA</label>
+                                <input type="radio" id="behavior-feel-better-SA" name="behavior-feel-better" value="2">
+                                <label for="behavior-feel-better-SA">SA</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">I consider myself religious</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="religion-sd" name="religion" value="2">
+                                <label for="religion-sd">SD</label>
+                                <input type="radio" id="religion-MD" name="religion" value="2">
+                                <label for="religion-MD">MD</label>
+                                <input type="radio" id="religion-D" name="religion" value="2">
+                                <label for="religion-D">D</label>
+                                <input type="radio" id="religion-A" name="religion" value="2">
+                                <label for="religion-A">A</label>
+                                <input type="radio" id="religion-MA" name="religion" value="2">
+                                <label for="religion-MA">MA</label>
+                                <input type="radio" id="religion-SA" name="religion" value="2">
+                                <label for="religion-SA">SA</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">I tend to ignore my health.</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="ignore-sd" name="ignore" value="2">
+                                <label for="ignore-sd">SD</label>
+                                <input type="radio" id="ignore-MD" name="ignore" value="2">
+                                <label for="ignore-MD">MD</label>
+                                <input type="radio" id="ignore-D" name="ignore" value="2">
+                                <label for="ignore-D">D</label>
+                                <input type="radio" id="ignore-A" name="ignore" value="2">
+                                <label for="ignore-A">A</label>
+                                <input type="radio" id="ignore-MA" name="ignore" value="2">
+                                <label for="ignore-MA">MA</label>
+                                <input type="radio" id="ignore-SA" name="ignore" value="2">
+                                <label for="ignore-SA">SA</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">I lack what it takes to get ahead.</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="lack-sd" name="lack" value="2">
+                                <label for="lack-sd">SD</label>
+                                <input type="radio" id="lack-MD" name="lack" value="2">
+                                <label for="lack-MD">MD</label>
+                                <input type="radio" id="lack-D" name="lack" value="2">
+                                <label for="lack-D">D</label>
+                                <input type="radio" id="lack-A" name="lack" value="2">
+                                <label for="lack-A">A</label>
+                                <input type="radio" id="lack-MA" name="lack" value="2">
+                                <label for="lack-MA">MA</label>
+                                <input type="radio" id="lack-SA" name="lack" value="2">
+                                <label for="lack-SA">SA</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">I feel anxious, frustrated, or depressed.</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="feel-sd" name="feel" value="2">
+                                <label for="feel-sd">SD</label>
+                                <input type="radio" id="feel-MD" name="feel" value="2">
+                                <label for="feel-MD">MD</label>
+                                <input type="radio" id="feel-D" name="feel" value="2">
+                                <label for="feel-D">D</label>
+                                <input type="radio" id="feel-A" name="feel" value="2">
+                                <label for="feel-A">A</label>
+                                <input type="radio" id="feel-MA" name="feel" value="2">
+                                <label for="feel-MA">MA</label>
+                                <input type="radio" id="feel-SA" name="feel" value="2">
+                                <label for="feel-SA">SA</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">I don't find value in meditation.</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="meditate-sd" name="meditate" value="2">
+                                <label for="meditate-sd">SD</label>
+                                <input type="radio" id="meditate-MD" name="meditate" value="2">
+                                <label for="meditate-MD">MD</label>
+                                <input type="radio" id="meditate-D" name="meditate" value="2">
+                                <label for="meditate-D">D</label>
+                                <input type="radio" id="meditate-A" name="meditate" value="2">
+                                <label for="meditate-A">A</label>
+                                <input type="radio" id="meditate-MA" name="meditate" value="2">
+                                <label for="meditate-MA">MA</label>
+                                <input type="radio" id="meditate-SA" name="meditate" value="2">
+                                <label for="meditate-SA">SA</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                        <!-- SURVEY OPTION -->
+                        <div class="cta-group-horizontal">
+                            <div class="cta-group-label">I have no friends and family that can help me.</div>
+                            <div class="cta-group-options">
+                                <input type="radio" id="friends-sd" name="friends" value="2">
+                                <label for="friends-sd">SD</label>
+                                <input type="radio" id="friends-MD" name="friends" value="2">
+                                <label for="friends-MD">MD</label>
+                                <input type="radio" id="friends-D" name="friends" value="2">
+                                <label for="friends-D">D</label>
+                                <input type="radio" id="friends-A" name="friends" value="2">
+                                <label for="friends-A">A</label>
+                                <input type="radio" id="friends-MA" name="friends" value="2">
+                                <label for="friends-MA">MA</label>
+                                <input type="radio" id="friends-SA" name="friends" value="2">
+                                <label for="friends-SA">SA</label>
+                            </div>
+                        </div>
+                        <!-- END SURVEY OPTION -->
+                    </div>
+                    <!-- <img class="placeholder-img" src="https://i.imgur.com/AZMmiZf.png"> -->
+                 </div>
+                    <a id="btn-patient-high-risk-1" href="#" class="btn blue">Next</a>
+                 <span class="view-id">View [Patient High Risk Steps]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Patient High Risk Steps 2 -->
+        <div class="view view-patient-high-risk-steps-2 hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit" data-back="view-provider-portal" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <h3>Recommended Actions for the Patient</h3>
+                 <p>Based on the previous answers, the patient will benefit from the following actions:</p>
+                 <div class="placeholder-container">
+                    <!-- <img class="placeholder-img" src="https://i.imgur.com/ll5xeCK.png"> -->
+                    <div class="action-item-table">
+                        <div class="col">
+                            <div class="col-header">Factor</div>
+                            <div class="row">Medical procedure</div>
+                            <div class="row">Disease severity and progression</div>
+                            <div class="row">Religiosity</div>
+                            <div class="row">Social Support</div>
+                        </div>
+                        <div class="col">
+                            <div class="col-header">Effect</div>
+                            <div class="row">If complex, then E-HLOC is more likely</div>
+                            <div class="row">If severe/advance then I-HLOC is less likely</div>
+                            <div class="row">If religious, then E-HLOC is more likely</div>
+                            <div class="row">If no social support, then I-HLOC is less likely</div>
+                        </div>
+                        <div class="col">
+                            <div class="col-header">Action</div>
+                            <div class="row">Advocate - De-emphasize complexity of procedure</div>
+                            <div class="row">Advocate - De-emphasize severity/progression</div>
+                            <div class="row">Arrange - suggest clergy for action in addition to prayer</div>
+                            <div class="row">Refer - suggest social services resources</div>
+                        </div>
+                    </div>
+                    <div class="placeholder-btns">
+                        <a id="btn-patient-high-risk-2" href="#" class="btn blue">Next</a>
+                        <a id="btn-patient-high-risk-print" href="#" class="btn green">Print</a>
+                        <a id="btn-patient-high-risk-refer" href="#" class="btn green">Refer</a>
+                        <a id="btn-patient-high-risk-arrange" href="#" class="btn green">Arrange</a>
+                    </div>
+                 </div>
+                 <span class="view-id">View [Patient High Risk Steps]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Thank You Provider -->
+        <div class="view view-thank-you-provider-high-risk hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit" data-back="view-patient-high-risk-steps-2" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <div class="artwork-container">
+                     <img class="artwork" src="./static/img/process.svg">
+                 </div>
+                 <h2>Thank you for using Once for your Patients. We have received the additional data.</h2>
+                 <span class="view-id">View [Thank You Patient]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Patient Results -->
+        <div class="view view-patient-results hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <span class="view-id">View [Patient results]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Provider Portal -->
+        <div class="view view-provider-portal hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit hide" data-back="view-home" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <div class="provider-welcome-modal">
+                     <h1>Welcome to the Provider Portal</h1>
+                     <p>To begin, tap on a patient to view their Risk of Readmission score.</p>
+                 </div>
+                 <div class="provider-patient-list">
+                     <!-- PATIENT ITEM -->
+                     <div class="provider-patient-row" data-patient-id="004" data-patient-type="patient" data-age="72" data-first="Bernadette" data-last="Peters" data-dob="19481103" data-rrs="8" data-high-risk="true" data-gender="female" data-avatar="https://i.imgur.com/L4xLU2N.png">
+                         <div class="provider-patient-identity">
+                             <img class="meta-identity-avatar" src="https://i.imgur.com/L4xLU2N.png">
+                            <h2 class="provider-patient-name"><span class="last-name">Peters</span>, <span class="first-name">Bernadette</span><br>
+                            <span class="high-risk-patient">High Risk</span></h2>
+                         </div>
+                         <div class="provider-patient-meta">
+                            <p>Age: <span class="meta-data-metric">72</span></p>
+                            <p>DOB: <span class="meta-data-metric">11/3/1948</span></p>
+                         </div>
+                     </div>
+                     <!-- END PATIENT ITEM -->
+                    <!-- PATIENT ITEM -->
+                     <div class="provider-patient-row" data-patient-id="003" data-patient-type="patient" data-age="26" data-first="Zachary" data-last="Henderson" data-dob="19530523" data-rrs="2" data-high-risk="false" data-gender="male" data-avatar="https://i.imgur.com/BTvCZMw.png">
+                         <div class="provider-patient-identity">
+                             <img class="meta-identity-avatar" src="https://i.imgur.com/BTvCZMw.png">
+                            <h2 class="provider-patient-name"><span class="last-name">Henderson</span>, <span class="first-name">Zack</span></h2>
+                         </div>
+                         <div class="provider-patient-meta">
+                            <p>Age: <span class="meta-data-metric">26</span></p>
+                            <p>DOB: <span class="meta-data-metric">5/23/1994</span></p>
+                         </div>
+                     </div>
+                     <!-- END PATIENT ITEM -->
+                    <!-- PATIENT ITEM -->
+                     <div class="provider-patient-row" data-patient-id="002" data-patient-type="patient"   data-age="87" data-first="Robert" data-last="Jameson" data-dob="19330702" data-rrs="11" data-high-risk="true" data-gender="male" data-avatar="https://i.imgur.com/vwiNw4p.png">
+                         <div class="provider-patient-identity">
+                             <img class="meta-identity-avatar" src="https://i.imgur.com/vwiNw4p.png">
+                            <h2 class="provider-patient-name"><span class="last-name">Jameson</span>, <span class="first-name">Robert</span><br>
+                            <span class="high-risk-patient">High Risk</span>
+                            </h2>
+                         </div>
+                         <div class="provider-patient-meta">
+                            <p>Age: <span class="meta-data-metric">87</span></p>
+                            <p>DOB: <span class="meta-data-metric">7/2/1933</span></p>
+                         </div>
+                     </div>
+                     <!-- END PATIENT ITEM -->
+                     <!-- PATIENT ITEM -->
+                     <div class="provider-patient-row" data-patient-id="001" data-patient-type="patient"   data-age="47" data-first="John" data-last="Smith" data-dob="19730325" data-rrs="5" data-high-risk="false" data-gender="male" data-avatar="https://i.imgur.com/YVOnWAB.png">
+                         <div class="provider-patient-identity">
+                             <img class="meta-identity-avatar" src="https://i.imgur.com/YVOnWAB.png">
+                            <h2 class="provider-patient-name"><span class="last-name">Smith</span>, <span class="first-name">John</span></h2>
+                         </div>
+                         <div class="provider-patient-meta">
+                            <p>Age: <span class="meta-data-metric">47</span></p>
+                            <p>DOB: <span class="meta-data-metric">3/25/1973</span></p>
+                         </div>
+                     </div>
+                     <!-- END PATIENT ITEM -->
+                 </div>
+                 <span class="view-id">View [Provider Portal]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Provider Scorecard -->
+        <div class="view view-provider-scorecard hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                 <a id="cta-quit" class="cta-quit" data-back="view-patient-high-risk-steps" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <div class="provider-scorecard">
+                     <div class="provider-patient-row"  data-patient="smith-john-1953">
+                         <div class="provider-patient-identity">
+                             <img class="meta-identity-avatar" src="./static/img/avatar_male.svg">
+                            <h2 class="provider-patient-name"><span id="provider-patient-data-last" class="last-name">Smith</span>, <span id="provider-patient-data-first" class="first-name">John</span></h2>
+                         </div>
+                         <div class="provider-patient-meta">
+                            <p>Age: <span id="provider-patient-data-age" class="meta-data-metric">47</span></p>
+                            <p>DOB: <span id="provider-patient-data-dob" class="meta-data-metric">3/25/1973</span></p>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="scorecard-data-container">
+                    <div class="scorecard-img-container">
+                        <div class="scorecard-data-points-high-risk hide">
+                            <p class="data-points-disclaimer">We have identified your patient, <span id="scorecard-patient-full-name" style="font-weight:bold;color:#387dff;"></span>, as a high-risk patient for hospital readmission based on their Readmission Risk Score (RRS) on the following criteria:</p>
+                            <ul class="scorecard-data-points">
+                                <li class="data-point-pay"><i class="ri-money-dollar-circle-line"></i> Has Medicare, Medicaid or self pay <i>+1</i></li>
+                                <li class="data-point-bath"><i class="ri-home-heart-fill"></i> Needs bathing, dressing, moving, using bathroom or eating assistance <i>+1</i></li>
+                                <li class="data-point-er"><i class="ri-hospital-fill"></i> Admission following emergent visit <i>+3</i></li>
+                                <li class="data-point-cancer"><i class="ri-bubble-chart-fill"></i> Cancer Stage 2 <i>+2</i></li>
+                                <li class="data-point-periph"><i class="ri-drop-fill"></i> Peripheral vascular disease <i>+1</i></li>
+                            </ul>
+                        </div>
+                        <div class="scorecard-data-points-low-risk hide">
+                            <p class="data-points-disclaimer">We have identified your patient, <span id="scorecard-patient-full-name-low-risk" style="font-weight:bold;color:#387dff;"></span>, as having a low-risk for hospital readmission based on their Readmission Risk Score (RRS). The following factors may still be important to you and the patient for clinical decision making and patient monitoring.</p>
+                            <ul class="scorecard-data-points">                            
+                                <li class="data-point-er"><i class="ri-hospital-fill"></i> Hospital length of stay greater than 5 days <i>+2</i></li>
+                            </ul>
+                        </div>
+                        <!-- <img src="https://i.imgur.com/6WPBdMq.png"> -->
+                    </div>
+                    <div class="scorecard-rrs-display">
+                        <h2>RRS: <span id="provider-patient-data-rrs">5</span></h2>
+                        <div class="scorecard-cta-low-risk">
+                            <h5>NO ADDITIONAL STEPS NECESSARY</h5>
+                            <p>No further steps are necessary.<br>Thank you for using Once™</p>
+                        </div>
+                        <div class="scorecard-cta-high-risk hide">
+                            <h3 class="scorecard-cta-high-risk-label">HIGH RISK FOR READMISSION</h3>
+                            
+                            <div class="scorecard-end-cta">
+                                <p>Please proceed to the next page for additional steps.</p>
+                                <a id="btn-high-risk-results" href="#" class="cta-btn btn blue">Next</a>
+                            </div>
+                            
+                            <!-- <h5>ADDITIONAL STEPS RECOMMENDED</h5>
+                            <p>There are a number of things <span id="scorecard-patient-full-name"></span> can do to improve their course of care.  To identify these items, please complete the following with the patient:</p> -->
+                        </div>
+                        
+                    </div>
+
+                </div>
+                 <span class="view-id">View [Provider Scorecard]</span>
+             </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+        <!-- VIEW - Patient Matrix -->
+        <div class="view view-patient-matrix hide animate__animated animate__fadeIn animate__delay-1s">
+             <div class="container">
+                  <a id="cta-quit" class="cta-quit" data-back="view-provider-portal" href="#"> <i class="ri-arrow-left-line"></i> Go back</a>
+                 <h2>Diagnostic Matrix</h2>
+                 <p>The Patient's condition and circumstances indicate they can benefit from additional actions to engage them in the course of care.</p>
+                 <img class="diagnostic-graph" src="https://i.imgur.com/aq17Jj0.png">
+                 <p>Please proceed to the next page for additional steps.</p>
+                    <a id="btn-high-risk-results-2" href="#" class="cta-btn btn blue">Next</a>
+                 <span class="view-id">View [Patient matrix]</span>
+             </div>
+        </div>
+        <footer class="hide">
+            <div class="footer-fb-container">
+                <img id="footer-fb" src="./static/brand/florida-blue.png">
+                <p>Health Innovation Challenge</p>
+            </div>
+            <div class="footer-uni-container hide">
+                <p>Cory Feldman and James Wallace
+                    <br>
+                    <span id="footer-date">September 2020</spa>
+                </p>
+                <img id="footer-uni" src="./static/brand/universities.PNG">
+            </div>
+        </footer>  
+    </div>
+    <script src="./lib/js/onceHealthApp.js"></script>
+  </body>
+</html>

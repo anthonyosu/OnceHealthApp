@@ -1,0 +1,61 @@
+@media (max-width:900px) {
+    .app {
+        width:100%;
+        border-radius: 0px;
+        padding:0px;
+    }
+    .app .logo {
+        margin: 0 auto;
+    }
+    html, body {
+        padding: 0;
+        margin: 0;
+        background:white;
+    }
+    .hero-home {
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    .hero-home h2 {
+        font-size: 1.5em;
+        padding-top: 20px;
+    }
+    .view .container {
+        flex-direction: column;
+        padding:10px;
+    }
+    .menu {
+        display:none;
+    }
+    .view .container .artwork-caption {
+        max-width: 100%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .view-import-bb .container {
+        padding: 0px;
+    }
+    .view-import-bb .medicare-import-container {
+        border-radius: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100%;
+    }
+    .view-calculate .cta-group-horizontal { 
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .view-calculate .cta-group-horizontal .calc-score-cta {
+    margin-bottom: 10px;
+    }
+    .view-manual-enter .container .cta-group-horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .view-manual-enter .cta-group-horizontal .cta-group-label {
+        max-width: 50%;
+    }
+}
