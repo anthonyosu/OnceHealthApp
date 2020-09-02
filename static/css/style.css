@@ -9,7 +9,7 @@ html, body {
     font-family: 'Inter', 'Times New Roman', Times, serif
 }
 .blue-background {
-    background: linear-gradient(0deg, transparent, #8ed8e9)!important;
+    background: linear-gradient(0deg, rgba(255,255,255,0), #8ed8e9)!important;
 }
 .app {
     max-width: 1000px;
