@@ -23,6 +23,52 @@ html, body {
 .view-home {
     background: transparent;
 }
+.view-home .container {
+    flex-direction: column;
+}
+.three-cols h1 {
+    margin-top: 55px;
+}
+.three-cols {
+    text-align: center;
+}
+.three-cols-cols {
+    display: flex;
+    justify-content: space-between;
+}
+.three-cols-cols h2 {
+    display: flex;
+    flex-direction: column;
+}
+.three-cols-cols h2 i {
+    font-size: 3em;
+}
+.three-cols-cols h2 i.ri-heart-2-fill {
+    background: -webkit-linear-gradient(#f70094, #cc0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.three-cols-cols h2 i.ri-money-dollar-circle-fill {
+    background: -webkit-linear-gradient(#37dda3, #09c2da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.three-cols-cols h2 i.ri-hospital-fill {
+    background: -webkit-linear-gradient(#72a6ff, #006aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.three-cols-cols h2 {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+color: #0c1f33;
+}
 .white-logo {
     filter: invert(1) grayscale(1) brightness(5);
 }
@@ -637,16 +683,16 @@ span#provider-patient-data-rrs {
 /* VIEW Patient High Risk Steps Final */
 .action-item-table {
     display: flex;
-    background: #e6e6e6;
+    background: #fafafa;
     border: 1px solid #d8d8d8;
 }
 .col div {
     padding: 20px;
     transition:all 0.5 ease;
-    height: 35px;
+    height: 70px;
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #9dc8db;
+    border-bottom: 3px solid #cfecf8;
 }
 .col-header {
     background: white;
