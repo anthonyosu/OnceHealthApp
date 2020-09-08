@@ -399,13 +399,16 @@ footer {
 .placeholder-container {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 .placeholder-btns {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height:300px;
+    height:200px;
+    width: 100%;
+
 }
 /* view-patient-high-risk-steps-2 */
 /* VIEW Thank You Provider */
@@ -691,13 +694,15 @@ span#provider-patient-data-rrs {
     transition:all 0.5 ease;
     height: 70px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: flex-start;
     border-bottom: 3px solid #cfecf8;
 }
 .col-header {
     background: white;
     font-weight: bold;
     color: #1396ce;
+    font-size: 1.5em;
 }
 .row:hover {
     background: white;
@@ -712,6 +717,17 @@ span#provider-patient-data-rrs {
 .diagnostic-graph {
     max-width: 100%;
     width: 500px;
+}
+.chart-arrow {
+    display: block;
+    font-size: 3em;
+    color: #052bb5;
+}
+.col-effect .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* END VIEW Diagnostic Graph */
 /* Utilitiy */
